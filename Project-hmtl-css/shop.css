@@ -6,7 +6,7 @@
     --red-color:
 }
 body{
-    background-image: linear-gradient(to top right, #642b73, #c6426e);
+    background-image: linear-gradient(to top right, #19283B, #B8B9C1);
     font-family: system-ui;
     overflow: hidden;
 }
@@ -145,7 +145,7 @@ body{
 }
 .list__card-img{
     background-image: linear-gradient(to top right,
-    #D89CD1, #D499D4);
+    #b8b1e4, #D499D4);
     padding: 40px;
     display: flex;
     justify-content: center;
