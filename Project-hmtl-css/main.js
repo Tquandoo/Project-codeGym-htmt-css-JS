@@ -273,7 +273,7 @@ class Cart {
       card.reloadCard();
     }
     function logout() {
-      window.location.replace("login.html");
+      window.location.replace("index.html");
       }
       // add item to menu
 

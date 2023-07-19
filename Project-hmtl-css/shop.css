@@ -133,7 +133,7 @@ body{
     grid-template-columns: 300px 300px 300px;
     column-gap: 20px; 
     row-gap: 20px;
-    height: 900px;
+    height: 850px;
 }
 .list__card{
     min-height: 400px;

@@ -128,18 +128,19 @@ a{
 }
 .login{
     background-color: #c8bccfb3;
-    width: 270px;
+    width: 370px;
+    height: 600px;
     text-align: center;
     border: 2px solid #fff;
     border-radius: 30px;
     padding: 50px 30px;
     box-shadow: 0 50px 150px #5553;
+    font-size: large;
 }
 .login__title{
-    font-size: x-large;
+    font-size: 2rem;
     font-weight: bold;
     margin-bottom: 20px;
-
 }
 .login__des{
     margin-bottom: 20px;
@@ -167,6 +168,7 @@ a{
     background-color: transparent;
     padding: 0 20px ;
     font-family: Poppins;
+    font-size: 1rem;
 }
 .login__group span {
     color : #777;
@@ -180,17 +182,18 @@ a{
 .login__recovery{
     text-align: right;
     margin-bottom: 20px;
-    font-size: small;
+    font-size: large;
 }
 .login__signIn button {
-    background-color: #FA6A69;
+    background-color: #61686d;
     width: 100%;
     height: 50px;
     border-radius: 10px;
     border: none;
     font-family: Poppins;
+    font-size: 1.2rem;
     color: #fff;
-    box-shadow: 0 10px 50px #FA6A6999;
+    box-shadow: 0 12px 40px #39435399;
     margin-bottom: 30px;
     transition: 0.5s;
 }
@@ -199,7 +202,7 @@ a{
     box-shadow: none;
 }
 .login__Or{
-    font-size: small;
+    font-size: 1.2rem;
     margin-bottom: 30px;
     position: relative;
 }
@@ -226,7 +229,7 @@ a{
         right: 20px;
 }
 .login__list img {
-    width: 30px;
+    width: 40px;
 }
 .login__list{
     display: grid;
@@ -244,6 +247,6 @@ a{
 
 }
 .login__register{
-    font-size: small;
+    font-size: 1.2rem;
 }
 
