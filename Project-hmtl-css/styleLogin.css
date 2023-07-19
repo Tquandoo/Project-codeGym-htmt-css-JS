@@ -4,7 +4,7 @@
 }
 body{
     margin: 0;
-    font-size: 15px;
+    font-size: 20px;
     font-family: Poppins;
 }
 
@@ -35,7 +35,7 @@ nav ul li:hover{
     color: #f6f1f1;
     border: 1px solid #efefef;
     border-radius: 10px;
-    font-size: large;
+    font-size: 1.5rem;
     transform: translateY(-3px);
     box-shadow: 20px 15px 30px;
 }
@@ -84,6 +84,7 @@ nav ul li.active{
     border-radius: 10px;
     background-color: var(--light);
     font-weight: bold;
+    font-size: 1.3rem;
 }
 .statis{
     display: grid;
