@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+</head>
+<body>
+    <!-- modal -->
+    <!-- <button class="open-modal-btn"></button> -->
+    <div class="modal">
+        <div class="modal__inner">
+            <div class="modal__header">
+                <p>Enter Information</p>
+                <i class="fa-sharp fa-solid fa-xmark"></i>
+            </div>
+            <div class="modal__body">
+               <form >
+                    <div class="form-group">
+                        <label for="link drink">Drink link</label>
+                        <input type="text" class ="form-control" id = "link-drink">
+                    </div>
+                    <div class="form-group">
+                        <label for="name-drink">Drink name</label>
+                        <input type="text" class ="form-control" id = "name-drink">
+                    </div>
+                    <div class="form-group">
+                        <label for="describe-drink">Drink describe</label>
+                        <input type="text" class ="form-control" id = "describe-drink">
+                    </div>
+                    <div class="form-group">
+                        <label for="price-drink" >Drink price</label>
+                        <input type="number" class ="form-control" id = "price-drink">
+                    </div>
+               </form>
+            </div>
+            <div class="modal__footer">
+                    <button type="button" class ="btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class ="btn-primary" onclick="addItemToMenu()" data-dismiss="modal">Save changes</button> 
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="menu">
+            <div class="logo">
+                Trung<span>Quân</span>
+            </div>
+            <ul>
+                <li class="active"><i class="fa-solid fa-house-user"></i>HOME</li>
+                <li><i class="fa-regular fa-user"></i>User</li>
+                <li><i class="fa-solid fa-heart"></i>Favorite</li>
+                <li onclick="logout()"><i class="fas fa-sign-out-alt"></i>Logout</li>
+
+            </ul>
+            <ul>
+                <li><i class="fa-brands fa-tiktok"></i> Tiktok</li>
+                <li><i class="fa-brands fa-facebook"></i><a href="https://www.facebook.com/profile.php?id=100082289906432">Facebook</a></li>
+                <li><i class="fa-brands fa-instagram"></i><a href="https://www.instagram.com/tquandoo_24/?fbclid=IwAR3tcmfkKvtthDmj4NJ4p3etm72F6lRJFpNKh5goqlUxES5-BMGFNoZBkdI">Instagran</a></li>
+            </ul>
+        </div>
+        <div class="center">
+            <div class="search">
+                <div class="form">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search...">
+                </div>
+            </div>
+            <div class="header">
+                <h2>PRODUCTS</h2>
+                <button class="buttonAdd">Add Product</button> 
+            </div>
+            <div id="list">
+
+                
+            </div>
+            <ul class="listPage">
+        
+            </ul>
+        </div>
+        <div class="shopping">
+            <img src="assets/shopping.svg" alt="">
+            <span class="quantity">0</span>
+            <div class="card" id="card_1">
+                <h1>Card</h1>
+                <ul class="card__listCard"></ul>
+                <div class="card__checkOut">
+                    <div class="card__total">0</div>
+                    <div class="card__closeShopping">Close</div>
+                    <div>
+                        <button id="payment-bill" onclick="payment()">Thanh toán</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="toast toast--success">
+            <div class="toast__icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <div class="toast__body">
+                <h3 class="toast__title">Success</h3>
+                <p class="toast__msg">You have successfully added your product</p>
+            </div>
+            <div class="toast__close">
+                <i class="fa-solid fa-xmark"></i>
+            </div> 
+        </div>
+    </div>
+    
+
+    <script src="main.js">
+    </script>
+</body>
+</html>
